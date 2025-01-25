@@ -36,7 +36,7 @@ We provide ready-to-run versions of the notebooks for Google Colab:
 
 ## Code and Data  
 
-- **`1_GRAPHiC_model_selection.ipynb`**: Notebook for model selection and hyperparameter tuning.  
+- **`1_GRAPHiC_model_selection.ipynb`**: Notebook for model selection.  
 - **`2_GRAPHiC_creating_classifiers.ipynb`**: Notebook for creating the classifiers.  
 - **`3_GRAPHiC_model_loading.ipynb`**: Notebook for loading and performing inference with the trained classifiers.  
 - **`graphic-results.csv`**: A results file containing precision, recall, and F1 scores for each category across Java, Python, and Pharo.  
