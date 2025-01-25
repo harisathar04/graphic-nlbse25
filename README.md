@@ -1,49 +1,79 @@
-# GRAPHiC Model Selection and Classifier Creation
+# GRAPHiC Model Selection, Classifier Creation, and Model Loading  
 
-This repository contains our notebooks for training, testing, and using GRAPHiC, our submission to the NLBSE'25 tool competition.
+This repository contains the notebooks for training, testing, and using **GRAPHiC**, our submission to the NLBSE'25 tool competition.  
 
-## Notebook Descriptions
+## Notebook Descriptions  
 
-1. **1_GRAPHiC_model_selection_(NLBSE'25).ipynb**: Outlines how we selected the base model and tuned the hyperparameters.
-2. **2_GRAPHiC_creating_classifiers_(NLBSE'25).ipynb**: Shows how we created the classifiers that make up GRAPHiC.
+- **`1_GRAPHiC_model_selection.ipynb`**: Covers the selection of the base model for GRAPHiC.  
+- **`2_GRAPHiC_creating_classifiers.ipynb`**: Explains how the classifiers were built and trained as part of GRAPHiC.  
+- **`3_GRAPHiC_model_loading.ipynb`**: Demonstrates how to load and use the trained GRAPHiC classifiers for inference.  
 
-## Google Colab
+## Hugging Face Classifiers  
 
-If you wish to run the notebooks in Google Colab, we provide the following ready-to-go notebooks:
+The following classifier, trained as part of GRAPHiC, is uploaded on Hugging Face for easy access:  
 
-1. **1_GRAPHiC_model_selection**
-2. **2_GRAPHiC_creating_classifiers.ipynb**
+1. **Classifier for Java Comments**  
+   - Link: [Java Classifier on HF](https://huggingface.co/harisathar04/graphic-nlbse-java)
+2. **Classifier for Python Comments**  
+   - Link: [Python Classifier on HF](https://huggingface.co/harisathar04/graphic-nlbse-python)
+3. **Classifier for Pharo Comments**  
+   - Link: [Pharo Classifier on HF](https://huggingface.co/harisathar04/graphic-nlbse-pharo)
 
-## Contents
+## Google Colab  
 
-1. [Code and Data](#code-and-data)
-2. [How to Run](#how-to-run)
-3. [Replicating Results](#replicating-results)
+We provide ready-to-run versions of the notebooks for Google Colab:  
 
-## Code and Data
+- [`1_GRAPHiC_model_selection.ipynb`](#https://colab.research.google.com/drive/1_IwExSR-YUrMiy-6DDhqbQBZ9Yw5Mt9b)  
+- [`2_GRAPHiC_creating_classifiers.ipynb`](#https://colab.research.google.com/drive/1mPsCYRMmG42fhrtORdP6ldL0JrPkFkkZ)  
+- [`3_GRAPHiC_model_loading.ipynb`](#https://colab.research.google.com/drive/1hTrl7NtffhMFzTm_OB9fDftQHPvQW7SZ)  
 
-- **1_GRAPHiC_model_selection_(NLBSE'25).ipynb**: Notebook for performing model selection.
-- **2_GRAPHiC_creating_classifiers_(NLBSE'25).ipynb**: Notebook for creating classifiers.
-- **graphic-results.csv**: A sample results file used for benchmarking or comparison.
+## Contents  
 
-## How to Run
+- **Code and Data**  
+- **How to Run**  
+- **Replicating Results**  
+- **Requirements**  
 
-1. Open the Jupyter notebooks:
+## Code and Data  
+
+- **`1_GRAPHiC_model_selection.ipynb`**: Notebook for model selection and hyperparameter tuning.  
+- **`2_GRAPHiC_creating_classifiers.ipynb`**: Notebook for creating the classifiers.  
+- **`3_GRAPHiC_model_loading.ipynb`**: Notebook for loading and performing inference with the trained classifiers.  
+- **`graphic-results.csv`**: A results file containing precision, recall, and F1 scores for each category across Java, Python, and Pharo.  
+- **`requirements.txt`**: Contains the dependencies required to run the notebooks.  
+
+## How to Run   
+
+1. Open the Jupyter notebooks:  
 
    ```bash
    jupyter notebook
-   ```
+   ```  
 
-2. Run the cells in the following order:
-   - Open **1_GRAPHiC_model_selection_(NLBSE'25).ipynb** and execute all cells to perform model selection.
-   - Open **2_GRAPHiC_creating_classifiers_(NLBSE'25).ipynb** and execute all cells to create classifiers.
+2. Execute the notebooks in the following order:  
 
-## Replicating Results
+   - Open **`1_GRAPHiC_model_selection.ipynb`** and run all cells to perform model selection.  
+   - Open **`2_GRAPHiC_creating_classifiers.ipynb`** and run all cells to create the classifiers.  
+   - Open **`3_GRAPHiC_model_loading.ipynb`** and run all cells to load the trained classifiers and perform inference.  
 
-To replicate the results presented in the paper:
+## Replicating Results  
 
-1. Ensure the **graphic-results.csv** file is in the same directory as the notebooks.
-2. Follow the steps outlined in the notebooks to generate the expected outputs.
-3. Compare your outputs with those in the `graphic-results.csv` file.
+To replicate the results presented in the paper:  
 
-For further questions or issues, please raise an issue in the repository.
+1. Ensure the **`graphic-results.csv`** file is in the same directory as the notebooks.  
+2. Follow the steps outlined in each notebook to reproduce the outputs.  
+3. The file includes precision, recall, and F1 scores for each category. Compare your outputs with those in **`graphic-results.csv`** for validation.  
+
+## Requirements  
+
+Install the dependencies listed in **`requirements.txt`** before running the notebooks. This ensures all required libraries and packages are available in your environment.  
+
+To install the dependencies:  
+
+```bash
+pip install -r requirements.txt
+```  
+
+## Support  
+
+If you have questions or encounter any issues, please raise an issue in the repository.  
